@@ -20,6 +20,10 @@ public class ArraysDemo {
 		System.out.println("1st index: " + myStringArray1[1]);
 		System.out.println("2nd index: " + myStringArray1[2]);
 		
+		/* Will generate a ArrayIndexOutOfBoundsException
+		 * System.out.println("2nd index: " + myStringArray1[3]);
+		 */
+		
 		int len1 = myIntArray1.length;
 		int len2 = myStringArray1.length;
 		
