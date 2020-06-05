@@ -15,6 +15,10 @@ public class Car {
 		// year
 		private int year;
 		
+		int speed;
+		
+		int gear;
+		
 
 		public void increaseSpeed() {
 			System.out.println("Increasing the speed");
@@ -54,5 +58,16 @@ public class Car {
 			} else {
 				System.out.println("This year is not valid");
 			}
+		}
+		
+		public Car () {
+			this.speed = 0;
+			this.gear = 0;
+			System.out.println("Executing constructor without arguments");
+		}
+		
+		public Car (int speed, int gear) {
+			this.speed = speed;
+			this.gear = gear;
 		}
 }
