@@ -38,7 +38,7 @@ public class JavascriptClick {
 	public void test() throws InterruptedException {
 		Thread.sleep(3000);
 		WebElement checkbox = driver.findElement(By.id("bmwcheck"));
-		js.executeScript("arguments[0].click()", checkbox);
+		js.executeScript("arguments[0].click()", checkbox);	
 	}
 	
 	@After
