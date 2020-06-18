@@ -25,20 +25,21 @@ public class WindowSize {
 //		System.setProperty("webdriver.chrome.driver", "/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/chromedriver");
 		driver = new FirefoxDriver();
 //		driver = new ChromeDriver();
-//		baseUrl = "https://letskodeit.teachable.com/pages/practice";
+
 		wt = new WaitTypes(driver);
 		js = (JavascriptExecutor) driver;
-		driver.manage().window().maximize();
-//		driver.get(baseUrl);
+//		driver.manage().window().maximize();
+
 		js.executeScript("window.location = 'https://letskodeit.teachable.com/p/practice\'");
 	}
 
 	@Test
 	public void test() throws InterruptedException {
 		Thread.sleep(5000);
-//		WebElement textBox = driver.findElement(By.id("name"));
-		WebElement textBox = (WebElement) js.executeScript("return document.getElementById('name')");
-		textBox.sendKeys("Test");
+		long height = (long) js.executeScript("return window.innerHeight");
+		long width = (long) js.executeScript("return window.innerWidth");
+		System.out.println("Height is " + height);
+		System.out.println("Width is " + width);
 	}
 	
 	@After
