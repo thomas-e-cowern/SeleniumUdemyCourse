@@ -33,9 +33,12 @@ public class SwitchFrame {
 	@Test
 	public void test() throws InterruptedException {
 		Thread.sleep(3000);
-		WebElement frame = driver.findElement(By.id("courses-iframe"));
-		frame.findElement(By.className("navbar-toggle")).click();
-	
+		driver.switchTo().frame("courses-iframe");
+		driver.findElement(By.className("navbar-toggle")).click();
+		driver.findElement(By.id("search-courses")).sendKeys("Testing...");;
+		driver.switchTo().defaultContent();
+		driver.findElement(By.id("bmwcheck")).click();
+		Thread.sleep(3000);
 	}
 
 	@After
