@@ -4,13 +4,12 @@ import static org.junit.Assert.*;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -18,9 +17,9 @@ public class NoSuchElementDemo {
 
 	@Test
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", 
-				"/Users/atomar/Documents/workspace_personal/libs/chromedriver");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", 
+				"/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/geckodriver");
+		WebDriver driver = new FirefoxDriver();
 		String baseUrl = "https://learn.letskodeit.com";
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.get(baseUrl);
@@ -34,7 +33,7 @@ public class NoSuchElementDemo {
 		emailField.sendKeys("testing");
 		
 		// 2. Incorrect locator or type of locator
-		driver.findElement(By.xpath("//a[contains(@href,'/sign_in')]")).click();
+//		driver.findElement(By.xpath("//a[contains(@href,'/sign_in')]")).click();
 		
 		// 3. Element is in iFrame
 		driver.get("https://learn.letskodeit.com/p/practice");
