@@ -13,6 +13,7 @@ public class NoFrameworkTest {
 
 	private WebDriver driver;
 	private String baseUrl;
+	String testUrl;
 
 	@Before
 	public void beforeClass() {
@@ -25,18 +26,29 @@ public class NoFrameworkTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
+		testUrl = driver.getCurrentUrl();
+		System.out.println("Url: " + testUrl);
 	}
 
 	@Test
 	public void test() {
-//		driver.findElement(By.id("/html[1]/body[1]/div[6]/div[1]/header[1]/section[1]/div[2]")).click();
-		driver.findElement(By.id("//button[@id='tab-flight-tab-hp']")).click();
-		driver.findElement(By.id("flight-origin")).sendKeys("New York");
-		driver.findElement(By.id("flight-destination")).sendKeys("Chicago");
-		driver.findElement(By.id("flight-departing")).sendKeys("10/28/2014");
-		driver.findElement(By.id("flight-returning")).sendKeys("10/31/2014");
-		driver.findElement(By.id("search-button")).click();
+		
+		if (testUrl.equals("https://www.expedia.com/?pwaLob=wizard-hotel-pwa-v2")) {
+			System.out.println("Test one");
+			driver.findElement(By.id("//button[@id='tab-flight-tab-hp']//span[@class='icons-container']")).click();
+			driver.findElement(By.id("//button[@id='tab-flight-tab-hp']")).click();
+			driver.findElement(By.id("flight-origin")).sendKeys("New York");
+			driver.findElement(By.id("flight-destination")).sendKeys("Chicago");
+			driver.findElement(By.id("flight-departing")).sendKeys("10/28/2014");
+			driver.findElement(By.id("flight-returning")).sendKeys("10/31/2014");
+			driver.findElement(By.id("search-button")).click();
+		} else {
+			System.out.println("Test two");
+			driver.findElement(By.id("//button[@id='tab-flight-tab-hp']")).click();
+			
+		}	
 	}
+
 
 	@After
 	public void afterClass() {
