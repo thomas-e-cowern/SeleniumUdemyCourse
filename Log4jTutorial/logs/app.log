@@ -1,0 +1,3 @@
+11:02:10.400 DEBUG LoggingFile -Debug message logged
+11:02:10.405 ERROR LoggingFile -Error message logged
+11:02:10.405 FATAL LoggingFile -Fatal Message Logged
