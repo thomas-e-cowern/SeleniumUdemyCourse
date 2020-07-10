@@ -14,17 +14,17 @@ public class TestNGPriority {
 	public void afterClass() {
 	}
 
-	@Test
+	@Test(priority=1)
 	public void test1() {
 		System.out.println("Test method 1");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void test2() {
 		System.out.println("Test method 2");
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void test3() {
 		System.out.println("Test method 3");
 	}
