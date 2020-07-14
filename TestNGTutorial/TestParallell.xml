@@ -2,12 +2,12 @@
 <suite name="Parallel TestSuite" parallel="methods" thread-count="2">
 <test name="Test 1">
 	<classes>
-		<class name="testclasses.TestNGParallel1"></class>
+		<class name="testclasses.TestNGParallell1"></class>
 	</classes>
 </test>
 <test name="Test 2">
 	<classes>
-		<class name="testclasses.TestNGParallel2"></class>
+		<class name="testclasses.TestNGParallell2"></class>
 	</classes>
 </test>
 </suite>

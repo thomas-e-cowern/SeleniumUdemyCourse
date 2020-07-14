@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Parameters TestSuite" duration-ms="103" started-at="2020-07-14T12:31:20 EDT" finished-at="2020-07-14T12:31:20 EDT">
+  <suite name="Parallel TestSuite" duration-ms="12264" started-at="2020-07-14T15:21:25 EDT" finished-at="2020-07-14T15:21:37 EDT">
     <groups>
     </groups>
-    <test name="Test 1" duration-ms="103" started-at="2020-07-14T12:31:20 EDT" finished-at="2020-07-14T12:31:20 EDT">
-      <class name="testclasses.TestNGParameters">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testclasses.TestNGParameters@4b4523f8]" name="setUp" is-config="true" duration-ms="35" started-at="2020-07-14T12:31:20 EDT" finished-at="2020-07-14T12:31:20 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mac]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test 1" duration-ms="6120" started-at="2020-07-14T15:21:25 EDT" finished-at="2020-07-14T15:21:31 EDT">
+      <class name="testclasses.TestNGParallell1">
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGParallell1@18eed359]" name="testMethod2" duration-ms="6021" started-at="2020-07-14T15:21:25 EDT" finished-at="2020-07-14T15:21:31 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testMethod1(java.lang.String)[pri:0, instance:testclasses.TestNGParameters@4b4523f8]" name="testMethod1" duration-ms="11" started-at="2020-07-14T12:31:20 EDT" finished-at="2020-07-14T12:31:20 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[201,200]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testMethod2 -->
+        <test-method status="PASS" signature="testMethod1()[pri:0, instance:testclasses.TestNGParallell1@18eed359]" name="testMethod1" duration-ms="6021" started-at="2020-07-14T15:21:25 EDT" finished-at="2020-07-14T15:21:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-      </class> <!-- testclasses.TestNGParameters -->
+      </class> <!-- testclasses.TestNGParallell1 -->
     </test> <!-- Test 1 -->
-  </suite> <!-- Parameters TestSuite -->
+    <test name="Test 2" duration-ms="6018" started-at="2020-07-14T15:21:31 EDT" finished-at="2020-07-14T15:21:37 EDT">
+      <class name="testclasses.TestNGParallell2">
+        <test-method status="PASS" signature="testMethod1()[pri:0, instance:testclasses.TestNGParallell2@1f36e637]" name="testMethod1" duration-ms="6005" started-at="2020-07-14T15:21:31 EDT" finished-at="2020-07-14T15:21:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGParallell2@1f36e637]" name="testMethod2" duration-ms="6008" started-at="2020-07-14T15:21:31 EDT" finished-at="2020-07-14T15:21:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+      </class> <!-- testclasses.TestNGParallell2 -->
+    </test> <!-- Test 2 -->
+  </suite> <!-- Parallel TestSuite -->
 </testng-results>
