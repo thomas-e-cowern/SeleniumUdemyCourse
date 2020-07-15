@@ -6,9 +6,9 @@
     <classes>
       <class name="exercises.TestNGParallelExercise">
         <methods>
-          <include name="f"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
         </methods>
       </class> <!-- exercises.TestNGParallelExercise -->
     </classes>
@@ -18,9 +18,9 @@
     <classes>
       <class name="exercises.TestNGParallelExercise">
         <methods>
-          <include name="f"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
         </methods>
       </class> <!-- exercises.TestNGParallelExercise -->
     </classes>
