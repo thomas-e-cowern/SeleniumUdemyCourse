@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Exercise TestSuite">
+<test name="Test 1">
+<parameter name="browser" value="firefox"></parameter>
+	<classes>
+		<class name="exercises.TestNGParallelExercise"></class>
+	</classes>
+</test>
+<test name="Test 2">
+<parameter name="browser" value="chrome"></parameter>
+	<classes>
+		<class name="exercises.TestNGParallelExercise"></class>
+	</classes>
+</test>
+</suite>
