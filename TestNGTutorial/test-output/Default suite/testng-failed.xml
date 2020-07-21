@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exercises.TestNGParallelExercise">
+      <class name="testclasses.TestNGITestResult">
         <methods>
-          <include name="cleanUp"/>
-          <include name="setUp"/>
-          <include name="testLogin"/>
+          <include name="afterMethod"/>
+          <include name="testMethod1"/>
         </methods>
-      </class> <!-- exercises.TestNGParallelExercise -->
+      </class> <!-- testclasses.TestNGITestResult -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

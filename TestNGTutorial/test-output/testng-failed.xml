@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
-  <test thread-count="2" name="Chrome test(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exercises.TestNGParallelExercise">
+      <class name="testclasses.TestNGITestResult">
         <methods>
-          <include name="cleanUp"/>
-          <include name="setUp"/>
-          <include name="testLogin"/>
+          <include name="afterMethod"/>
+          <include name="testMethod1"/>
         </methods>
-      </class> <!-- exercises.TestNGParallelExercise -->
+      </class> <!-- testclasses.TestNGITestResult -->
     </classes>
-  </test> <!-- Chrome test(failed) -->
-  <test thread-count="2" name="Firefox test(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="exercises.TestNGParallelExercise">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="setUp"/>
-          <include name="testLogin"/>
-        </methods>
-      </class> <!-- exercises.TestNGParallelExercise -->
-    </classes>
-  </test> <!-- Firefox test(failed) -->
-</suite> <!-- Failed suite [Parallel TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
