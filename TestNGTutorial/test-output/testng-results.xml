@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+  <suite name="Default suite" duration-ms="175" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+    <test name="Default test" duration-ms="175" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
       <class name="testclasses.TestNGITestResult">
-        <test-method status="FAIL" signature="testMethod1()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod1" duration-ms="49" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+        <test-method status="FAIL" signature="testMethod1()[pri:0, instance:testclasses.TestNGITestResult@2b2948e2]" name="testMethod1" duration-ms="27" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,26 +53,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="4" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@2b2948e2]" name="afterMethod" is-config="true" duration-ms="19" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMethod1 status=FAILURE method=TestNGITestResult.testMethod1()[pri:0, instance:testclasses.TestNGITestResult@57536d79] output={null}]]]>
+                <![CDATA[[TestResult name=testMethod1 status=FAILURE method=TestNGITestResult.testMethod1()[pri:0, instance:testclasses.TestNGITestResult@2b2948e2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod2" duration-ms="2" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGITestResult@2b2948e2]" name="testMethod2" duration-ms="3" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@2b2948e2]" name="afterMethod" is-config="true" duration-ms="3" started-at="2020-07-21T15:50:05 EDT" finished-at="2020-07-21T15:50:05 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMethod2 status=SUCCESS method=TestNGITestResult.testMethod2()[pri:0, instance:testclasses.TestNGITestResult@57536d79] output={null}]]]>
+                <![CDATA[[TestResult name=testMethod2 status=SUCCESS method=TestNGITestResult.testMethod2()[pri:0, instance:testclasses.TestNGITestResult@2b2948e2] output={null}]]]>
               </value>
             </param>
           </params>

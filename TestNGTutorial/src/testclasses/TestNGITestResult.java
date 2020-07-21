@@ -21,7 +21,13 @@ public class TestNGITestResult {
   
   @AfterMethod
   public void afterMethod(ITestResult result) {
-	  System.out.println("Test Method: " + result.getMethod().getMethodName());
+	  
+	  if (result.getStatus() == ITestResult.FAILURE) {
+		  System.out.println("Failed: " + result.getMethod().getMethodName());
+	  }
+	  
+	  if (result.getStatus() == ITestResult.SUCCESS) {
+		  System.out.println("Success: " + result.getMethod().getMethodName());
+	  }
   }
-
 }
