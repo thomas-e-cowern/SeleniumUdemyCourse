@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="108" started-at="2020-07-21T15:05:30 EDT" finished-at="2020-07-21T15:05:31 EDT">
+  <suite name="Default suite" duration-ms="131" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="108" started-at="2020-07-21T15:05:30 EDT" finished-at="2020-07-21T15:05:31 EDT">
+    <test name="Default test" duration-ms="131" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
       <class name="testclasses.TestNGITestResult">
-        <test-method status="FAIL" signature="testMethod1()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod1" duration-ms="16" started-at="2020-07-21T15:05:31 EDT" finished-at="2020-07-21T15:05:31 EDT">
+        <test-method status="FAIL" signature="testMethod1()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod1" duration-ms="49" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,7 +53,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="4" started-at="2020-07-21T15:05:31 EDT" finished-at="2020-07-21T15:05:31 EDT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="4" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
           <params>
             <param index="0">
               <value>
@@ -64,11 +64,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod2" duration-ms="3" started-at="2020-07-21T15:05:31 EDT" finished-at="2020-07-21T15:05:31 EDT">
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="testMethod2" duration-ms="2" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-07-21T15:05:31 EDT" finished-at="2020-07-21T15:05:31 EDT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGITestResult@57536d79]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-21T15:20:41 EDT" finished-at="2020-07-21T15:20:41 EDT">
           <params>
             <param index="0">
               <value>

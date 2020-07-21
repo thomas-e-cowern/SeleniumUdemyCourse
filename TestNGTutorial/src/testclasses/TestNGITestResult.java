@@ -21,7 +21,7 @@ public class TestNGITestResult {
   
   @AfterMethod
   public void afterMethod(ITestResult result) {
-	  System.out.println(result.getMethod().getMethodName());
+	  System.out.println("Test Method: " + result.getMethod().getMethodName());
   }
 
 }
