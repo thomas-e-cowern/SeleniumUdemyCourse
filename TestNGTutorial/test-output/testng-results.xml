@@ -2,18 +2,18 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1038" started-at="2020-07-22T11:38:11 EDT" finished-at="2020-07-22T11:38:12 EDT">
+  <suite name="Default suite" duration-ms="1019" started-at="2020-07-22T14:07:13 EDT" finished-at="2020-07-22T14:07:14 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1038" started-at="2020-07-22T11:38:11 EDT" finished-at="2020-07-22T11:38:12 EDT">
+    <test name="Default test" duration-ms="1019" started-at="2020-07-22T14:07:13 EDT" finished-at="2020-07-22T14:07:14 EDT">
       <class name="testclasses.TestNGScreenshotTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="setUp" is-config="true" duration-ms="893" started-at="2020-07-22T11:38:11 EDT" finished-at="2020-07-22T11:38:12 EDT">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="setUp" is-config="true" duration-ms="914" started-at="2020-07-22T14:07:13 EDT" finished-at="2020-07-22T14:07:14 EDT">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[org/apache/commons/exec/Executor]]>
+              <![CDATA[org/apache/commons/exec/ExecuteWatchdog]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/exec/Executor
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/exec/ExecuteWatchdog
 at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
 at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:183)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
@@ -56,7 +56,7 @@ at org.testng.TestNG.run(TestNG.java:1034)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.exec.Executor
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.exec.ExecuteWatchdog
 at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
 at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
 at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
@@ -68,13 +68,13 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testLogin()[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="testLogin" duration-ms="0" started-at="2020-07-22T11:38:12 EDT" finished-at="2020-07-22T11:38:12 EDT">
+        <test-method status="SKIP" signature="testLogin()[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="testLogin" duration-ms="0" started-at="2020-07-22T14:07:14 EDT" finished-at="2020-07-22T14:07:14 EDT">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[org/apache/commons/exec/Executor]]>
+              <![CDATA[org/apache/commons/exec/ExecuteWatchdog]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/exec/Executor
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/exec/ExecuteWatchdog
 at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
 at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:183)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
@@ -117,7 +117,7 @@ at org.testng.TestNG.run(TestNG.java:1034)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.exec.Executor
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.exec.ExecuteWatchdog
 at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
 at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
 at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
@@ -129,7 +129,7 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="SKIP" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="cleanUp" is-config="true" duration-ms="-1595432292654" started-at="2020-07-22T11:38:12 EDT" finished-at="1969-12-31T19:00:00 EST">
+        <test-method status="SKIP" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:testclasses.TestNGScreenshotTest@80503]" name="cleanUp" is-config="true" duration-ms="-1595441234904" started-at="2020-07-22T14:07:14 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
