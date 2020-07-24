@@ -2,11 +2,11 @@ package listeners;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
+//import org.testng.annotations.Listeners;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-@Listeners(CustomListener2.class)
+//@Listeners(CustomListener2.class)
 public class TestNGListenerTest2 {
   
   @BeforeClass

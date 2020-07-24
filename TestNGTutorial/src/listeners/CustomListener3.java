@@ -22,7 +22,5 @@ public class CustomListener3 implements ISuiteListener {
 		System.out.println("Coming from suite onFinish");
 		ISuiteListener.super.onFinish(suite);
 	}
-
-	
 	
 }
