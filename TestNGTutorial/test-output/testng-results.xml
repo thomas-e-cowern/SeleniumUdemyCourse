@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Listener&#039;s Test Suite" duration-ms="1669" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:57 EDT">
+  <suite name="Listener&#039;s Test Suite" duration-ms="269" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
     <groups>
     </groups>
-    <test name="Application test 1" duration-ms="126" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:56 EDT">
+    <test name="Application test 1" duration-ms="152" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
       <class name="listeners.TestNGListenerTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:listeners.TestNGListenerTest@52feb982]" name="beforeClass" is-config="true" duration-ms="18" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:56 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:listeners.TestNGListenerTest@76b0bfab]" name="beforeClass" is-config="true" duration-ms="16" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.TestNGListenerTest@52feb982]" name="test1" duration-ms="12" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:56 EDT">
+        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.TestNGListenerTest@76b0bfab]" name="test1" duration-ms="18" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.TestNGListenerTest@52feb982]" name="test2" duration-ms="7" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:56 EDT">
+        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.TestNGListenerTest@76b0bfab]" name="test2" duration-ms="18" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -61,23 +61,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:listeners.TestNGListenerTest@52feb982]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-07-24T14:25:56 EDT" finished-at="2020-07-24T14:25:56 EDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:listeners.TestNGListenerTest@76b0bfab]" name="afterClass" is-config="true" duration-ms="10" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- listeners.TestNGListenerTest -->
     </test> <!-- Application test 1 -->
-    <test name="Application test 2" duration-ms="20" started-at="2020-07-24T14:25:57 EDT" finished-at="2020-07-24T14:25:57 EDT">
+    <test name="Application test 2" duration-ms="27" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
       <class name="listeners.TestNGListenerTest2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:listeners.TestNGListenerTest2@58c1670b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-07-24T14:25:57 EDT" finished-at="2020-07-24T14:25:57 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:listeners.TestNGListenerTest2@5bb21b69]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.TestNGListenerTest2@58c1670b]" name="test1" duration-ms="2" started-at="2020-07-24T14:25:57 EDT" finished-at="2020-07-24T14:25:57 EDT">
+        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.TestNGListenerTest2@5bb21b69]" name="test1" duration-ms="3" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.TestNGListenerTest2@58c1670b]" name="test2" duration-ms="3" started-at="2020-07-24T14:25:57 EDT" finished-at="2020-07-24T14:25:57 EDT">
+        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.TestNGListenerTest2@5bb21b69]" name="test2" duration-ms="1" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -123,7 +123,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:listeners.TestNGListenerTest2@58c1670b]" name="afterClass" is-config="true" duration-ms="2" started-at="2020-07-24T14:25:57 EDT" finished-at="2020-07-24T14:25:57 EDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:listeners.TestNGListenerTest2@5bb21b69]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-07-24T17:55:50 EDT" finished-at="2020-07-24T17:55:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
