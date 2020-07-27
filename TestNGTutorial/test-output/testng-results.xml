@@ -2,29 +2,50 @@
 <testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Reports and Logs Before Method]]>
+      <![CDATA[Reports and Logs Before Class]]>
     </line>
     <line>
       <![CDATA[Reports and Logs Before Method]]>
     </line>
+    <line>
+      <![CDATA[Reports and Logs Test Two]]>
+    </line>
+    <line>
+      <![CDATA[Reports and Logs After Method]]>
+    </line>
+    <line>
+      <![CDATA[Reports and Logs Before Method]]>
+    </line>
+    <line>
+      <![CDATA[Reports and Logs Test One]]>
+    </line>
+    <line>
+      <![CDATA[Reports and Logs After Method]]>
+    </line>
+    <line>
+      <![CDATA[Reports and Logs After Class]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="166" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+  <suite name="Regression Test Suite" duration-ms="124" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="166" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+    <test name="Application test" duration-ms="124" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
       <class name="testclasses.TestNGReportsAndLogs">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeClass" is-config="true" duration-ms="10" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeClass" is-config="true" duration-ms="8" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs Before Class]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
             <line>
               <![CDATA[Reports and Logs Before Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testTwo()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testTwo" duration-ms="9" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="FAIL" signature="testTwo()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testTwo" duration-ms="15" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -35,7 +56,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:968)
 at org.testng.Assert.assertTrue(Assert.java:43)
 at org.testng.Assert.assertTrue(Assert.java:53)
-at testclasses.TestNGReportsAndLogs.testTwo(TestNGReportsAndLogs.java:42)
+at testclasses.TestNGReportsAndLogs.testTwo(TestNGReportsAndLogs.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,28 +89,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs Test Two]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testTwo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterMethod" is-config="true" duration-ms="5" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterMethod" is-config="true" duration-ms="17" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs After Method]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
             <line>
               <![CDATA[Reports and Logs Before Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testOne" duration-ms="2" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="testOne()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testOne" duration-ms="2" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs Test One]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterMethod" is-config="true" duration-ms="27" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs After Method]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="testThree()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testThree" duration-ms="1" started-at="2020-07-27T10:38:38 EDT" depends-on-methods="testclasses.TestNGReportsAndLogs.testTwo" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="SKIP" signature="testThree()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="testThree" duration-ms="0" started-at="2020-07-27T10:47:39 EDT" depends-on-methods="testclasses.TestNGReportsAndLogs.testTwo" finished-at="2020-07-27T10:47:39 EDT">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TestNGReportsAndLogs.testThree()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a] depends on not successfully finished methods]]>
@@ -121,11 +154,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-07-27T10:38:38 EDT" finished-at="2020-07-27T10:38:38 EDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testclasses.TestNGReportsAndLogs@78e67e0a]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-07-27T10:47:39 EDT" finished-at="2020-07-27T10:47:39 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[Reports and Logs After Class]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testclasses.TestNGReportsAndLogs -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Application test -->
+  </suite> <!-- Regression Test Suite -->
 </testng-results>
