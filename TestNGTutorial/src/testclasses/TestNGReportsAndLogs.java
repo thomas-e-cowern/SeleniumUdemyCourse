@@ -5,44 +5,45 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 
 public class TestNGReportsAndLogs {
  
   @BeforeMethod
   public void beforeMethod() {
-	  System.out.println("Reports and Logs Before Method");
+	  Reporter.log("Reports and Logs Before Method", false);
   }
 
   @AfterMethod
   public void afterMethod() {
-	  System.out.println("Reports and Logs After Method");
+	  Reporter.log("Reports and Logs After Method", false);
   }
 
   @BeforeClass
   public void beforeClass() {
-	  System.out.println("Reports and Logs Before Class");
+	  Reporter.log("Reports and Logs Before Class", false);
   }
 
   @AfterClass
   public void afterClass() {
-	  System.out.println("Reports and Logs After Class");
+	  Reporter.log("Reports and Logs After Class", false);
   }
   
   @Test
   public void testOne() {
-	  System.out.println("Reports and Logs Test One");
+	  Reporter.log("Reports and Logs Test One", false);
   }
   
   @Test
   public void testTwo() {
-	  System.out.println("Reports and Logs Test Two");
+	  Reporter.log("Reports and Logs Test Two", false);
 	  Assert.assertTrue(false);
   }
   
   @Test(dependsOnMethods= { "testTwo" })
   public void testThree() {
-	  System.out.println("Reports and Logs Test Three");
+	  Reporter.log("Reports and Logs Test Three", false);
   }
 
 }
