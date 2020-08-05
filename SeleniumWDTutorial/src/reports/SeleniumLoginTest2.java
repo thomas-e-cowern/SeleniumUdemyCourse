@@ -49,7 +49,7 @@ public class SeleniumLoginTest2 {
 		WebElement welcomeText = null;
 //		
 		try {
-			welcomeText = driver.findElement(By.xpath("//div[text()='Hello test@email.com']"));
+			welcomeText = driver.findElement(By.xpath("//h1[@class='dynamic-heading margin-bottom-20']"));
 		}
 		catch (NoSuchElementException e) {
 			System.out.println(e.getMessage());
