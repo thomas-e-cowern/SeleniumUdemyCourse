@@ -1,18 +1,19 @@
 package reports;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+
 import java.util.concurrent.TimeUnit;
 
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 
-public class SeleniumLoginTest {
+public class SeleniumLoginTest2 {
 	
 	private static WebDriver driver;
 	private static String baseUrl;
@@ -61,4 +62,5 @@ public class SeleniumLoginTest {
 //		driver.quit();
 		System.out.println("We're done here!");
 	}
+
 }
