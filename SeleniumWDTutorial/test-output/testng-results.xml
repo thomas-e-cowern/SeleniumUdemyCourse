@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90817" started-at="2020-08-06T14:16:07 EDT" finished-at="2020-08-06T14:17:38 EDT">
+  <suite name="Default suite" duration-ms="35940" started-at="2020-08-06T14:25:49 EDT" finished-at="2020-08-06T14:26:24 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90817" started-at="2020-08-06T14:16:07 EDT" finished-at="2020-08-06T14:17:38 EDT">
+    <test name="Default test" duration-ms="35940" started-at="2020-08-06T14:25:49 EDT" finished-at="2020-08-06T14:26:24 EDT">
       <class name="reports.SeleniumLoginTestWithScreenshots">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="beforeClass" is-config="true" duration-ms="11807" started-at="2020-08-06T14:16:07 EDT" finished-at="2020-08-06T14:16:19 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="beforeClass" is-config="true" duration-ms="15573" started-at="2020-08-06T14:25:49 EDT" finished-at="2020-08-06T14:26:04 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="test1_validLoginTest()[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="test1_validLoginTest" duration-ms="78198" started-at="2020-08-06T14:16:19 EDT" finished-at="2020-08-06T14:17:37 EDT">
+        <test-method status="FAIL" signature="test1_validLoginTest()[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="test1_validLoginTest" duration-ms="19500" started-at="2020-08-06T14:26:04 EDT" finished-at="2020-08-06T14:26:24 EDT">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -53,7 +53,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1_validLoginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="tearDown" is-config="true" duration-ms="698" started-at="2020-08-06T14:17:37 EDT" finished-at="2020-08-06T14:17:38 EDT">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:reports.SeleniumLoginTestWithScreenshots@1dfe2924]" name="tearDown" is-config="true" duration-ms="785" started-at="2020-08-06T14:26:24 EDT" finished-at="2020-08-06T14:26:24 EDT">
           <params>
             <param index="0">
               <value>

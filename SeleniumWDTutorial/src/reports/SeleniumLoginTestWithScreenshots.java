@@ -94,6 +94,7 @@ public class SeleniumLoginTestWithScreenshots {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			test.log(LogStatus.FAIL, "The test failed a screenshot was generated.");
 			System.out.println("This test file is completed");
 		}
 
