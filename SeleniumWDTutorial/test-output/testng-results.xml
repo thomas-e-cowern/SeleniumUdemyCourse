@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19452" started-at="2020-08-05T18:07:32 EDT" finished-at="2020-08-05T18:07:51 EDT">
+  <suite name="Default suite" duration-ms="67090" started-at="2020-08-06T12:11:08 EDT" finished-at="2020-08-06T12:12:15 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19452" started-at="2020-08-05T18:07:32 EDT" finished-at="2020-08-05T18:07:51 EDT">
+    <test name="Default test" duration-ms="67090" started-at="2020-08-06T12:11:08 EDT" finished-at="2020-08-06T12:12:15 EDT">
       <class name="reports.SeleniumLoginTest2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.SeleniumLoginTest2@3701eaf6]" name="beforeClass" is-config="true" duration-ms="11105" started-at="2020-08-05T18:07:32 EDT" finished-at="2020-08-05T18:07:43 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.SeleniumLoginTest2@1dfe2924]" name="beforeClass" is-config="true" duration-ms="13771" started-at="2020-08-06T12:11:08 EDT" finished-at="2020-08-06T12:11:22 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1_validLoginTest()[pri:0, instance:reports.SeleniumLoginTest2@3701eaf6]" name="test1_validLoginTest" duration-ms="8282" started-at="2020-08-05T18:07:43 EDT" finished-at="2020-08-05T18:07:51 EDT">
+        <test-method status="PASS" signature="test1_validLoginTest()[pri:0, instance:reports.SeleniumLoginTest2@1dfe2924]" name="test1_validLoginTest" duration-ms="52690" started-at="2020-08-06T12:11:22 EDT" finished-at="2020-08-06T12:12:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1_validLoginTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:reports.SeleniumLoginTest2@3701eaf6]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-08-05T18:07:51 EDT" finished-at="2020-08-05T18:07:51 EDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:reports.SeleniumLoginTest2@1dfe2924]" name="afterClass" is-config="true" duration-ms="540" started-at="2020-08-06T12:12:15 EDT" finished-at="2020-08-06T12:12:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

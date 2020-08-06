@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/extentreports/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/extentreports/jsoup-1.8.3.jar"/>
 	<classpathentry kind="lib" path="/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/extentreports/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/extentreports/extentreports-2.41.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
