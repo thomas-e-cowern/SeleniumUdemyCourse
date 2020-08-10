@@ -18,7 +18,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
-public class SeleniumLoginTest2 {
+public class SeleniumLoginTest3 {
 	
 	private static WebDriver driver;
 	private static String baseUrl;
