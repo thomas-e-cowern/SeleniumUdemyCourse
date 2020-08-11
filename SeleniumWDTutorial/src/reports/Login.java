@@ -47,13 +47,15 @@ public class Login {
 	@Test
 	public void test1_validLoginTest() throws Exception {
 		
-		hp.clickSignupLink();
-			
-		hp.enterEmail("test@email.com");
-	
-		hp.enterPassword("abcabc");
-	
-		hp.clickGoButton();
+//		hp.clickSignupLink();
+//			
+//		hp.enterEmail("test@email.com");
+//	
+//		hp.enterPassword("abcabc");
+//	
+//		hp.clickGoButton();
+		
+		hp.login("test@email.com", "abcabc");
 		
 		Thread.sleep(3000);
 	
