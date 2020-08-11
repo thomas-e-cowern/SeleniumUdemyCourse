@@ -23,9 +23,9 @@ public class HomePage {
 		test.log(LogStatus.INFO, "Click on signup link");
 	}
 	
-	public void enterEmail () {
+	public void enterEmail (String email) {
 		WebElement emailField = driver.findElement(By.id("email"));
-		emailField.sendKeys("test@email.com");
+		emailField.sendKeys(email);
 		test.log(LogStatus.INFO, "Enter email");
 	}
 	

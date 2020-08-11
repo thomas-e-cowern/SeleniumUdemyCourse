@@ -49,7 +49,7 @@ public class Login {
 		
 		hp.clickSignupLink();
 			
-		hp.enterEmail();
+		hp.enterEmail("test@email.com");
 	
 		hp.enterPassword();
 	
