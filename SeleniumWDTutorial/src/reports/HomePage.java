@@ -1,6 +1,8 @@
 package reports;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -39,6 +41,24 @@ public class HomePage {
 		WebElement goButton = driver.findElement(By.xpath("//input[@class='btn btn-default btn-block btn-md dynamic-button']"));
 		goButton.click();
 		test.log(LogStatus.INFO, "Click go button");
+	}
+	
+	public boolean isCoursesTextPresent () {
+		WebElement welcomeText = null;
+	
+		try {
+			welcomeText = driver.findElement(By.xpath("//h1[@class='dynamic-heading margin-bottom-20']"));
+			test.log(LogStatus.INFO, "Checking text");
+			if (welcomeText != null) {
+				return true;
+			}
+		}
+		catch (NoSuchElementException e) {
+			System.out.println(e.getMessage());
+			return false;
+		}
+		
+		return false;
 	}
 	
 }
