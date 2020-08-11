@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26416" started-at="2020-08-11T14:35:59 EDT" finished-at="2020-08-11T14:36:26 EDT">
+  <suite name="Default suite" duration-ms="38377" started-at="2020-08-11T15:06:51 EDT" finished-at="2020-08-11T15:07:29 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26416" started-at="2020-08-11T14:35:59 EDT" finished-at="2020-08-11T14:36:26 EDT">
+    <test name="Default test" duration-ms="38377" started-at="2020-08-11T15:06:51 EDT" finished-at="2020-08-11T15:07:29 EDT">
       <class name="reports.Login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.Login@1dfe2924]" name="beforeClass" is-config="true" duration-ms="12628" started-at="2020-08-11T14:35:59 EDT" finished-at="2020-08-11T14:36:12 EDT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:reports.Login@2b552920]" name="beforeClass" is-config="true" duration-ms="19100" started-at="2020-08-11T15:06:51 EDT" finished-at="2020-08-11T15:07:10 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="test1_validLoginTest()[pri:0, instance:reports.Login@1dfe2924]" name="test1_validLoginTest" duration-ms="8557" started-at="2020-08-11T14:36:12 EDT" finished-at="2020-08-11T14:36:20 EDT">
+        <test-method status="PASS" signature="test1_validLoginTest()[pri:0, instance:reports.Login@2b552920]" name="test1_validLoginTest" duration-ms="8781" started-at="2020-08-11T15:07:10 EDT" finished-at="2020-08-11T15:07:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1_validLoginTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:reports.Login@1dfe2924]" name="afterClass" is-config="true" duration-ms="5160" started-at="2020-08-11T14:36:20 EDT" finished-at="2020-08-11T14:36:26 EDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:reports.Login@2b552920]" name="afterClass" is-config="true" duration-ms="10286" started-at="2020-08-11T15:07:19 EDT" finished-at="2020-08-11T15:07:29 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -57,16 +57,10 @@ public class Login {
 		
 		Thread.sleep(3000);
 	
-		WebElement welcomeText = null;
-//		
-		try {
-			welcomeText = driver.findElement(By.xpath("//h1[@class='dynamic-heading margin-bottom-20']"));
-			test.log(LogStatus.INFO, "Checking text");
-		}
-		catch (NoSuchElementException e) {
-			System.out.println(e.getMessage());
-		}
-		Assert.assertTrue(welcomeText != null);
+		boolean result = hp.isCoursesTextPresent();
+		
+		Assert.assertTrue(result);
+		
 	}
 	
 	@AfterClass
