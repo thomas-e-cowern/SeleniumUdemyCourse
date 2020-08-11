@@ -51,7 +51,7 @@ public class Login {
 			
 		hp.enterEmail("test@email.com");
 	
-		hp.enterPassword();
+		hp.enterPassword("abcabc");
 	
 		hp.clickGoButton();
 		

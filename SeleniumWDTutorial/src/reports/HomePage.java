@@ -29,9 +29,9 @@ public class HomePage {
 		test.log(LogStatus.INFO, "Enter email");
 	}
 	
-	public void enterPassword () {
+	public void enterPassword (String password) {
 		WebElement passwordField = driver.findElement(By.id("password"));
-		passwordField.sendKeys("abcabc");
+		passwordField.sendKeys(password);
 		test.log(LogStatus.INFO, "Enter password");
 	}
 	
