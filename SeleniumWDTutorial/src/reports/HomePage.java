@@ -1,6 +1,5 @@
 package reports;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -59,6 +58,13 @@ public class HomePage {
 		}
 		
 		return false;
+	}
+	
+	public void login (String email, String password) {
+		clickSignupLink();
+		enterEmail(email);
+		enterPassword(password);
+		clickGoButton();
 	}
 	
 }
