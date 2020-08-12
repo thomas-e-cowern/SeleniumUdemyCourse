@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import org.junit.Assert;
+
 public class UsingExcel {
 	
   private static WebDriver driver;
@@ -32,6 +34,8 @@ public class UsingExcel {
 		driver.get(Constants.URL);
 		
 		ExcelUtility.setExcelFile(Constants.File_Path + Constants.File_Name, "LoginTests");
+		
+		driver.findElement(By.xpath("//div[@class='ast-button']")).click();
   }
 
   @DataProvider(name = "loginData")
@@ -42,9 +46,19 @@ public class UsingExcel {
   
   @Test(dataProvider = "loginData")
   public void testUsindExcel(String username, String password) {
-	  driver.findElement(By.xpath("//div[@class='ast-button']")).click();
 	  
+	  driver.findElement(By.xpath("//div[@class='text-center zen-login']//input[@id='email']")).sendKeys(username);
 	  
+	  driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
+	  
+	  driver.findElement(By.xpath("//input[@class='btn btn-default btn-block btn-md dynamic-button']")).click();
+  
+	  String text = driver.findElement(By.xpath("//span[@class='dynamic-text help-block']")).getText();
+	  
+	  System.out.println("Error Text: " + text);
+	  
+	  Assert.assertEquals(text, "Your username or password is invalid. Please try again.");
+	 
   }
   
   @AfterClass
