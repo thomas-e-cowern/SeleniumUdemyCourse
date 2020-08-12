@@ -23,11 +23,12 @@ public class ExcelRead {
 		XSSFCell Cell;
 		
 		// Location of the Excel file
-		String path = "//Users/tcowern/Documents/SeleniumUdemyCourse/Data/ExcelRead.xlsx";
+		String path = Constants.File_Path;
+		String name = Constants.File_Name;
 		String sheetName = "Sheet1";
 
 		try {
-			FileInputStream ExcelFile = new FileInputStream(path);
+			FileInputStream ExcelFile = new FileInputStream(path + name);
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(sheetName);
 			
