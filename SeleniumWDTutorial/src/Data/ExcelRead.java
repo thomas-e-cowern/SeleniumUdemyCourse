@@ -23,7 +23,7 @@ public class ExcelRead {
 		XSSFCell Cell;
 		
 		// Location of the Excel file
-		String path = "//Users//atomar//Documents//workspace_personal//SeleniumWD2Tutorial//src//utilities//ExcelRead.xlsx";
+		String path = "//Users/tcowern/Documents/SeleniumUdemyCourse/Data/ExcelRead.xlsx";
 		String sheetName = "Sheet1";
 
 		try {
@@ -31,7 +31,7 @@ public class ExcelRead {
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(sheetName);
 			
-			Cell = ExcelWSheet.getRow(1).getCell(2);
+			Cell = ExcelWSheet.getRow(0).getCell(0);
 			String cellData = Cell.getStringCellValue();
 			System.out.println("Cell Data: " + cellData);
 			
