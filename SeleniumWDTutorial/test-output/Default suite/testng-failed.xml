@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="reports.SeleniumLoginTestWithScreenshots">
+      <class name="Data.UsingExcel">
         <methods>
+          <include name="afterClass"/>
+          <include name="testUsindExcel" invocation-numbers="1"/>
           <include name="beforeClass"/>
-          <include name="test1_validLoginTest"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- reports.SeleniumLoginTestWithScreenshots -->
+      </class> <!-- Data.UsingExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

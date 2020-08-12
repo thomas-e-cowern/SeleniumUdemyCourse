@@ -2,6 +2,7 @@ package Data;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -15,20 +16,22 @@ public class UsingExcel {
   private static String baseUrl;
   
   @BeforeClass
-  public void beforeClass() {
+  public void beforeClass() throws Exception {
 	  	
 		System.setProperty("webdriver.gecko.driver", "/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/geckodriver");
 		driver = new FirefoxDriver();
 		
-		// Location of the Excel file
-		String path = Constants.File_Path;
-		String name = Constants.File_Name;
-		String sheetName = "Sheet1";
+//		// Location of the Excel file
+//		String path = Constants.File_Path;
+//		String name = Constants.File_Name;
+//		String sheetName = "Sheet1";
 
 		// Maximize the browser's window
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(Constants.URL);
+		
+		ExcelUtility.setExcelFile(Constants.File_Path + Constants.File_Name, "LoginTests");
   }
 
   @DataProvider(name = "loginData")
@@ -39,6 +42,8 @@ public class UsingExcel {
   
   @Test(dataProvider = "loginData")
   public void testUsindExcel(String username, String password) {
+	  driver.findElement(By.xpath("//div[@class='ast-button']")).click();
+	  
 	  
   }
   
