@@ -16,26 +16,30 @@ public class UsingExcel {
   
   @BeforeClass
   public void beforeClass() {
-	  	baseUrl = "http://www.letskodeit.com/";
+	  	
 		System.setProperty("webdriver.gecko.driver", "/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/geckodriver");
 		driver = new FirefoxDriver();
+		
+		// Location of the Excel file
+		String path = Constants.File_Path;
+		String name = Constants.File_Name;
+		String sheetName = "Sheet1";
 
 		// Maximize the browser's window
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(baseUrl);
+		driver.get(Constants.URL);
   }
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
+  @DataProvider(name = "loginData")
+  public Object [][] dataProvider() {
+	  Object [][] testData = ExcelUtility.getTestData("Invalid_Login"); 
+	  return testData;
   }
   
-  @Test(dataProvider = "dp")
-  public void f(Integer n, String s) {
+  @Test(dataProvider = "loginData")
+  public void testUsindExcel(String username, String password) {
+	  
   }
   
   @AfterClass
