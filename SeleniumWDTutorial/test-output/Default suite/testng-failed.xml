@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Data.UsingExcel">
+      <class name="Data.UsingExcel_SingleDataSet">
         <methods>
-          <include name="afterClass"/>
-          <include name="testUsindExcel" invocation-numbers="1"/>
-          <include name="beforeClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testUsingExcel"/>
         </methods>
-      </class> <!-- Data.UsingExcel -->
+      </class> <!-- Data.UsingExcel_SingleDataSet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
