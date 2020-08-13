@@ -45,7 +45,7 @@ public class FileUpload {
 		WebElement fileInput = driver.findElement(By.xpath("//div[@class='a1 aaA aMZ']"));
 		fileInput.click();
 
-		String filePath = "//Users//atomar//Desktop//testfile.txt";
+		String filePath = "//Users/tcowern/Desktop/Test/TestFile.txt";
 		StringSelection stringSelection= new StringSelection(filePath);
 		//Copy to clipboard
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
