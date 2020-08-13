@@ -24,7 +24,7 @@ public class FileUpload {
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", "/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/geckodriver");
 		driver = new FirefoxDriver();
-		baseUrl = "https://www.gmail.com/";
+		baseUrl = "https://www.google.com/gmail/about/";
 
 		// Maximize the browser's window
 		driver.manage().window().maximize();
@@ -34,9 +34,10 @@ public class FileUpload {
 	
 	@Test
 	public void fileUpload() throws AWTException, InterruptedException {
-		driver.findElement(By.id("Email")).sendKeys("letskodeit");
-		driver.findElement(By.id("next")).click();
-		// driver.findElement(By.id("Passwd")).sendKeys(""); // Enter your password
+		driver.findElement(By.xpath("//ul[@class='h-c-header__cta-list header__nav--ltr']//a[contains(@class,'h-c-header__nav-li-link')][contains(text(),'Sign in')]"));
+		driver.findElement(By.id("//input[@id='identifierId']")).sendKeys("letskodeit");
+		driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']")).click();
+		driver.findElement(By.id("Passwd")).sendKeys(""); // Enter your password
 
 		driver.findElement(By.id("signIn")).click();
 		driver.findElement(By.xpath("//div[text()='COMPOSE']")).click();
