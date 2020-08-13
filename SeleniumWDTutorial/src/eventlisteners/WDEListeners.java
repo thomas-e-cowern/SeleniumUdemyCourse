@@ -8,8 +8,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 public class WDEListeners {
 
 	public static void main(String[] args) {
-		
-		String baseUrl = "https://www.expedia.com/";
+		System.setProperty("webdriver.gecko.driver", "/Users/tcowern/Documents/SeleniumUdemyCourse/Drivers/geckodriver");
+		String baseUrl = "https://www.google.com/";
 		WebDriver driver = new FirefoxDriver();
 		
 		EventFiringWebDriver eDriver = new EventFiringWebDriver(driver);
@@ -18,7 +18,7 @@ public class WDEListeners {
 		eDriver.register(he);
 		
 		eDriver.get(baseUrl);
-		eDriver.findElement(By.id("tab-flight-tab")).click();
+		eDriver.findElement(By.id("hplogo")).getText();
 
 	}
 
