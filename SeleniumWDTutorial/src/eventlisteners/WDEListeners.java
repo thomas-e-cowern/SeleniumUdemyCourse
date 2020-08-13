@@ -19,6 +19,7 @@ public class WDEListeners {
 		
 		eDriver.get(baseUrl);
 		eDriver.findElement(By.id("hplogo")).getText();
+		eDriver.findElement(By.id("hplogo")).click();;
 
 	}
 
