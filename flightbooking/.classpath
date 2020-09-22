@@ -42,5 +42,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Java"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/jdk-15"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
